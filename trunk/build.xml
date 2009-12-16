@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <project name="locale pt_PT" default="buildall" basedir="."> 
+ 
+	 <target name="clean">
+	 	<delete dir="${basedir}/bin/" defaultexcludes="true" includes="*.swc"/>
+	 </target>
+	 	
+	<target name="buildall" depends="clean,framework,rpc,airframework,airspark,automation,automation_agent,datavisualization"/>
+	
+ 	<target name="airframework">
+	 	<antcall target="buildSWC">
+	 		<param name="bundle" value="airframework_rb"/>
+	 		<param name="locale" value="pt_PT"/>
+	 	</antcall>	
+ 	</target>
+ 	
+ 	<target name="airspark">
+	 	<antcall target="buildSWC">
+	 		<param name="bundle" value="airspark_rb"/>
+	 		<param name="locale" value="pt_PT"/>
+	 	</antcall>	
+ 	</target>
+ 	
+ 	<target name="automation_agent">
+	 	<antcall target="buildSWC">
+	 		<param name="bundle" value="automation_agent_rb"/>
+	 		<param name="locale" value="pt_PT"/>
+	 	</antcall>	 		
+ 	</target>
+ 	
+ 	<target name="automation">
+	 	<antcall target="buildSWC">
+	 		<param name="bundle" value="automation_rb"/>
+	 		<param name="locale" value="pt_PT"/>
+	 	</antcall>		
+ 	</target>
+ 	
+ 	<target name="datavisualization">
+	 	<antcall target="buildSWC">
+	 		<param name="bundle" value="datavisualization_rb"/>
+	 		<param name="locale" value="pt_PT"/>
+	 	</antcall>	
+ 	</target>
+ 	
+ 	<target name="framework">
+	 	<antcall target="buildSWC">
+	 		<param name="bundle" value="framework_rb"/>
+	 		<param name="locale" value="pt_PT"/>
+	 	</antcall>		
+ 	</target>	
+ 	
+ 	<target name="rpc">
+	 	<antcall target="buildSWC">
+	 		<param name="bundle" value="rpc_rb"/>
+	 		<param name="locale" value="pt_PT"/>
+	 	</antcall>		
+ 	</target>
+ 	
+	 <target name="buildSWC">
+	 	<zip encoding="utf-8" 
+	 		 		destfile="${basedir}/bin/${bundle}.swc"  >
+	 		 <fileset dir="${basedir}/${bundle}" defaultexcludes="true">
+	 		 	<include name="catalog.xml"/>
+	 		 	<include name="library.swf"/>  		
+	 		 	<include name="**/locale/${locale}/**.properties"/>
+	 		</fileset>	
+	 	</zip>	 	
+	 </target>	
+ </project>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.0.0" build="12321" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="mx/core/mx_internal" mod="1243623426400" signatureChecksum="642982261" >
+        <def id="mx.core:mx_internal" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="_e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855_flash_display_Sprite" mod="1259678732271" signatureChecksum="480278969" >
+        <def id="_e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855_flash_display_Sprite" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.system:Security" type="e" /> 
+      </script>
+      <script name="mx/resources/IResourceBundle" mod="1243623452744" signatureChecksum="470430384" >
+        <def id="mx.resources:IResourceBundle" /> 
+        <dep id="Object" type="i" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="mx/resources/ResourceBundle" mod="1254342878752" signatureChecksum="1304346630" >
+        <def id="mx.resources:ResourceBundle" /> 
+        <dep id="mx.resources:IResourceBundle" type="i" /> 
+        <dep id="Object" type="i" /> 
+        <dep id="mx.core:mx_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.system:ApplicationDomain" type="s" /> 
+        <dep id="Error" type="e" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="aa222ba5104cfdf45aeac3dd74fa53291edc81d606a95edccfc9d911c0af077d"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+    <file path="locale/pt_BR/formatters.properties" mod="1244739233859" />
+    <file path="locale/pt_BR/SharedResources.properties" mod="1253303078131" />
+    <file path="locale/pt_BR/containers.properties" mod="1243623474712" />
+    <file path="locale/pt_BR/collections.properties" mod="1243623474775" />
+    <file path="locale/pt_BR/core.properties" mod="1259620746590" />
+    <file path="locale/pt_BR/effects.properties" mod="1243623474790" />
+    <file path="locale/pt_BR/skins.properties" mod="1256582886144" />
+    <file path="locale/pt_BR/controls.properties" mod="1259620746590" />
+    <file path="locale/pt_BR/styles.properties" mod="1243623474822" />
+  </files>
+</swc>
