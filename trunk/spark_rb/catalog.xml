@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.0.0" build="12321" minimumSupportedVersion="4.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="mx/core/mx_internal" mod="1243623426400" signatureChecksum="642982261" >
+        <def id="mx.core:mx_internal" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="_e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855_flash_display_Sprite" mod="1259677933011" signatureChecksum="480278969" >
+        <def id="_e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855_flash_display_Sprite" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.system:Security" type="e" /> 
+      </script>
+      <script name="mx/resources/IResourceBundle" mod="1243623452744" signatureChecksum="470430384" >
+        <def id="mx.resources:IResourceBundle" /> 
+        <dep id="Object" type="i" /> 
+        <dep id="AS3" type="n" /> 
+      </script>
+      <script name="mx/resources/ResourceBundle" mod="1254342878752" signatureChecksum="1304346630" >
+        <def id="mx.resources:ResourceBundle" /> 
+        <dep id="mx.resources:IResourceBundle" type="i" /> 
+        <dep id="Object" type="i" /> 
+        <dep id="mx.core:mx_internal" type="n" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.system:ApplicationDomain" type="s" /> 
+        <dep id="Error" type="e" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="a257c81ba58c283e20bd413e7273aa68f9533d9b5d6cd1b07413c967f277d674"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+    <file path="locale/pt_PT/layout.properties" mod="1250202789217" />
+    <file path="locale/pt_PT/components.properties" mod="1257564285179" />
+    <file path="locale/pt_PT/textLayout.properties" mod="1258507565258" />
+    <file path="locale/pt_PT/sparkEffects.properties" mod="1256582882599" />
+  </files>
+</swc>
