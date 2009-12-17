@@ -18,4 +18,4 @@ A forma mais simples de executar este processo é utilizando o *Flash Builder* o
   # Executar o o ficheiro _build.xml_ com o *ANT* (no *Eclipse* ou *Flash Builder*, pode-se correr este ficheiro a partir de uma opção do menu *Run*;
   # Verificar as traduções compilando um projecto referência em que a mensagem em questão deva aparecer;
   # Fazer o _commit_ das alterações através do *Subversion*. É obrigatório o preenchimento do comentário no _commit_ com as indicação dos códigos das mensagens traduzidas;
-  # Alterar o owner do issue para ruidsilva
+  # Alterar o owner do issue para ruidsilva ou joaopedromartinsfernandes para verificação técnica da tradução.
