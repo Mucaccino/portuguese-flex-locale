@@ -1,8 +1,0 @@
-Instruções sobre a forma de descarregar o projecto e editar os ficheiros
-
-
-As definições de locale para o Flex SDK são constituídas por uma série de ficheiros de texto com a extensão .properties que são compiladas para Resource Bundles que são automaticamente integrados no momento da compilação.
-
-Traduzir o SDK é, portanto, uma questão de substituir todas as mensagens existentes nestes ficheiros com as correspondentes em Português. Para referência são disponibilizadas as traduções para o Português do Brasil.
-
-Para se poder edita
