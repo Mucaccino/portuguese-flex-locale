@@ -40,12 +40,12 @@
     </library>
   </libraries>
   <files>
-    <file path="locale/pt_BR/containers.properties" mod="1259730878274" />
-    <file path="locale/pt_BR/core.properties" mod="1259730878336" />
-    <file path="locale/pt_BR/effects.properties" mod="1259730878352" />
-    <file path="locale/pt_BR/skins.properties" mod="1259730878383" />
-    <file path="locale/pt_BR/automation_agent.properties" mod="1258612333812" />
-    <file path="locale/pt_BR/controls.properties" mod="1259730878336" />
-    <file path="locale/pt_BR/styles.properties" mod="1259730878414" />
+    <file path="locale/pt_PT/containers.properties" mod="1259730878274" />
+    <file path="locale/pt_PT/core.properties" mod="1259730878336" />
+    <file path="locale/pt_PT/effects.properties" mod="1259730878352" />
+    <file path="locale/pt_PT/skins.properties" mod="1259730878383" />
+    <file path="locale/pt_PT/automation_agent.properties" mod="1258612333812" />
+    <file path="locale/pt_PT/controls.properties" mod="1259730878336" />
+    <file path="locale/pt_PT/styles.properties" mod="1259730878414" />
   </files>
 </swc>

@@ -40,8 +40,8 @@
     </library>
   </libraries>
   <files>
-    <file path="locale/pt_BR/datamanagement.properties" mod="1258612335609" />
-    <file path="locale/pt_BR/olap.properties" mod="1258612336077" />
-    <file path="locale/pt_BR/charts.properties" mod="1258612335140" />
+    <file path="locale/pt_PT/datamanagement.properties" mod="1258612335609" />
+    <file path="locale/pt_PT/olap.properties" mod="1258612336077" />
+    <file path="locale/pt_PT/charts.properties" mod="1258612335140" />
   </files>
 </swc>
