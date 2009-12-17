@@ -1,0 +1,4 @@
+#summary Algumas regras básicas para as traduções
+
+  # Não se devem traduzir o nome de classes, propriedades ou valores;
+  # File deve ser traduzido por Ficheiro e não Arquivo
