@@ -5,13 +5,28 @@
 	 	<delete dir="${basedir}/bin/" defaultexcludes="true" includes="*.swc"/>
 	 </target>
 	 	
-	<target name="buildall" depends="clean,framework,rpc,airframework,airspark,automation,automation_agent,datavisualization"/>
+	<target name="buildall" depends="clean,framework,rpc,airframework,airspark,automation,automation_agent,datavisualization,spark"/>
 	
  	<target name="airframework">
 	 	<antcall target="buildSWC">
 	 		<param name="bundle" value="airframework_rb"/>
 	 		<param name="locale" value="pt_PT"/>
 	 	</antcall>	
+ 		
+ 		<zip encoding="utf-8" 
+ 			 destfile="${basedir}/bin/airframework_rb.swc"  update="true" >
+ 			 <fileset dir="${basedir}/framework_rb" defaultexcludes="true" >
+ 			 	<include name="**/locale/pt_PT/collections.properties"/>
+ 			 	<include name="**/locale/pt_PT/containers.properties"/>
+ 			 	<include name="**/locale/pt_PT/controls.properties"/>
+ 			 	<include name="**/locale/pt_PT/core.properties"/>
+ 			 	<include name="**/locale/pt_PT/effects.properties"/>
+ 			 	<include name="**/locale/pt_PT/formatters.properties"/>
+ 			 	<include name="**/locale/pt_PT/SharedResources.properties"/>
+ 			 	<include name="**/locale/pt_PT/skins.properties"/>
+ 			 	<include name="**/locale/pt_PT/styles.properties"/>
+ 			</fileset>	
+ 		</zip>
  	</target>
  	
  	<target name="airspark">
@@ -19,6 +34,21 @@
 	 		<param name="bundle" value="airspark_rb"/>
 	 		<param name="locale" value="pt_PT"/>
 	 	</antcall>	
+ 		
+ 		<zip encoding="utf-8" 
+ 			 destfile="${basedir}/bin/airspark_rb.swc"  update="true" >
+ 			 <fileset dir="${basedir}/framework_rb" defaultexcludes="true" >
+ 			 	<include name="**/locale/pt_PT/collections.properties"/>
+ 			 	<include name="**/locale/pt_PT/containers.properties"/>
+ 			 	<include name="**/locale/pt_PT/controls.properties"/>
+ 			 	<include name="**/locale/pt_PT/core.properties"/>
+ 			 	<include name="**/locale/pt_PT/effects.properties"/>
+ 			 	<include name="**/locale/pt_PT/formatters.properties"/>
+ 			 	<include name="**/locale/pt_PT/SharedResources.properties"/>
+ 			 	<include name="**/locale/pt_PT/skins.properties"/>
+ 			 	<include name="**/locale/pt_PT/styles.properties"/>
+ 			</fileset>	
+ 		</zip>		
  	</target>
  	
  	<target name="automation_agent">
@@ -26,13 +56,41 @@
 	 		<param name="bundle" value="automation_agent_rb"/>
 	 		<param name="locale" value="pt_PT"/>
 	 	</antcall>	 		
+ 		
+ 		<zip encoding="utf-8" 
+ 			 destfile="${basedir}/bin/automation_agent_rb.swc"  update="true" >
+ 			 <fileset dir="${basedir}/framework_rb" defaultexcludes="true" >
+ 			 	<include name="**/locale/pt_PT/containers.properties"/>
+ 			 	<include name="**/locale/pt_PT/controls.properties"/>
+ 			 	<include name="**/locale/pt_PT/core.properties"/>
+ 			 	<include name="**/locale/pt_PT/effects.properties"/>
+ 			 	<include name="**/locale/pt_PT/skins.properties"/>
+ 			 	<include name="**/locale/pt_PT/styles.properties"/>
+ 			</fileset>	
+ 		</zip> 			
  	</target>
  	
  	<target name="automation">
 	 	<antcall target="buildSWC">
 	 		<param name="bundle" value="automation_rb"/>
 	 		<param name="locale" value="pt_PT"/>
-	 	</antcall>		
+	 	</antcall>	
+ 		
+ 		<zip encoding="utf-8" 
+ 		 			 destfile="${basedir}/bin/automation_rb.swc"  update="true" >
+ 		 	<fileset dir="${basedir}/framework_rb" defaultexcludes="true" >
+ 		 		<include name="**/locale/pt_PT/collections.properties"/>
+ 		 		<include name="**/locale/pt_PT/containers.properties"/>
+ 		 		<include name="**/locale/pt_PT/controls.properties"/>
+ 		 		<include name="**/locale/pt_PT/core.properties"/>
+ 		 		<include name="**/locale/pt_PT/effects.properties"/>
+ 		 		<include name="**/locale/pt_PT/formatters.properties"/>
+ 		 		<include name="**/locale/pt_PT/SharedResources.properties"/>
+ 		 		<include name="**/locale/pt_PT/skins.properties"/>
+ 		 		<include name="**/locale/pt_PT/styles.properties"/>
+ 		 	</fileset>	
+ 		 </zip>			
+	
  	</target>
  	
  	<target name="datavisualization">
@@ -53,13 +111,31 @@
 	 	<antcall target="buildSWC">
 	 		<param name="bundle" value="rpc_rb"/>
 	 		<param name="locale" value="pt_PT"/>
-	 	</antcall>		
+	 	</antcall>	
+ 		
+ 		<zip encoding="utf-8" 
+ 		 	destfile="${basedir}/bin/rpc_rb.swc"  update="true" >
+ 		 	<fileset dir="${basedir}/framework_rb" defaultexcludes="true" >
+ 		 		<include name="**/locale/pt_PT/collections.properties"/>
+ 		 		<include name="**/locale/pt_PT/core.properties"/>
+ 		 		<include name="**/locale/pt_PT/logging.properties"/>
+ 		 		<include name="**/locale/pt_PT/styles.properties"/>
+ 		 		<include name="**/locale/pt_PT/utils.properties"/>
+ 		 	</fileset>	
+ 		</zip>	 		
  	</target>
+ 	
+ 	<target name="spark">
+	 	<antcall target="buildSWC">
+	 		<param name="bundle" value="spark_rb"/>
+	 		<param name="locale" value="pt_PT"/>
+	 	</antcall>	
+ 	</target>	
  	
 	 <target name="buildSWC">
 	 	<zip encoding="utf-8" 
 	 		 		destfile="${basedir}/bin/${bundle}.swc"  >
-	 		 <fileset dir="${basedir}/${bundle}" defaultexcludes="true">
+	 		 <fileset dir="${basedir}/${bundle}" defaultexcludes="true" >
 	 		 	<include name="catalog.xml"/>
 	 		 	<include name="library.swf"/>  		
 	 		 	<include name="**/locale/${locale}/**.properties"/>

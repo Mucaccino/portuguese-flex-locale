@@ -40,15 +40,15 @@
     </library>
   </libraries>
   <files>
-    <file path="locale/pt_BR/formatters.properties" mod="1244739233859" />
-    <file path="locale/pt_BR/SharedResources.properties" mod="1253303078131" />
-    <file path="locale/pt_BR/aircontrols.properties" mod="1243623409260" />
-    <file path="locale/pt_BR/containers.properties" mod="1243623474712" />
-    <file path="locale/pt_BR/collections.properties" mod="1243623474775" />
-    <file path="locale/pt_BR/core.properties" mod="1259620746590" />
-    <file path="locale/pt_BR/effects.properties" mod="1243623474790" />
-    <file path="locale/pt_BR/skins.properties" mod="1256582886144" />
-    <file path="locale/pt_BR/controls.properties" mod="1259620746590" />
-    <file path="locale/pt_BR/styles.properties" mod="1243623474822" />
+    <file path="locale/pt_PT/formatters.properties" mod="1244739233859" />
+    <file path="locale/pt_PT/SharedResources.properties" mod="1253303078131" />
+    <file path="locale/pt_PT/aircontrols.properties" mod="1243623409260" />
+    <file path="locale/pt_PT/containers.properties" mod="1243623474712" />
+    <file path="locale/pt_PT/collections.properties" mod="1243623474775" />
+    <file path="locale/pt_PT/core.properties" mod="1259620746590" />
+    <file path="locale/pt_PT/effects.properties" mod="1243623474790" />
+    <file path="locale/pt_PT/skins.properties" mod="1256582886144" />
+    <file path="locale/pt_PT/controls.properties" mod="1259620746590" />
+    <file path="locale/pt_PT/styles.properties" mod="1243623474822" />
   </files>
 </swc>
