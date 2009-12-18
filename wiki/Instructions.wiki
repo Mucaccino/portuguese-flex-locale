@@ -10,6 +10,10 @@ Para se aceder aos ficheiros fontes guardados neste repositório é necessário 
 
 A forma mais simples de executar este processo é utilizando o *Flash Builder* ou o *Eclipse* com o plugin *Subclipse* instalado (O *Eclipse* e o *Flash Builder* já têm suporte nativo para *ANT*). Outras alternativas passam por ter o próprio *Subversion* (ou clientes gráficos como, por exemplo, o *TortoiseSVN*) e o *ANT* linha de comando instalados no computador
 
+=Configuração do Eclipse=
+Para que seja possível editar os ficheiros _.properties_ que contém os textos é necessário configurar o *Eclipse* para os abrir como _UTF-8_ e não como _ISO-8859-1_ como faria normalmente. Para isso é necessário editar as preferências, seleccionar a secção *General*, depois a opção *Content Types*. Na listagem de *Content Types* que aparece do lado direito da caixa de diálogo, abrir a secção *Text* e seleccionar a secção *Java Properties File*. No fundo da caixa de diálogo, na caixa de texto intitulada *Default enconding*, substituir _ISO-8859-1_ por _UTF-8_.
+
+
 =Instruções=
   # Fazer o checkout do projecto para uma pasta local. Este processo depende muito do clientes *Subversion* utilizado já que cada um possui metodologias e _workflows_ próprios. Devem utilizar como endereço do repositório o que é providenciado na _tab source_ do site do projecto;
   # Consultar os _issues_ criadas no site do projecto para verificar quais os ficheiros que já possuem "owner" (responsável);
