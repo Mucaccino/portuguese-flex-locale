@@ -1,0 +1,23 @@
+# Introdução #
+
+As definições de locale para o **Flex SDK** são constituídas por uma série de ficheiros de texto com a extensão .properties que são compiladas para Resource Bundles que são automaticamente integrados no momento da compilação.
+
+Traduzir o **SDK** é, portanto, uma questão de substituir todas as mensagens existentes nestes ficheiros com as correspondentes em Português. Para referência são disponibilizadas as traduções para o Português do Brasil.
+
+Para se aceder aos ficheiros fontes guardados neste repositório é necessário ter um cliente Subversion, o **ANT** e o **Flex SDK 4** instalados no computador. Para testar as alterações basta ter o **Flex SDK**, mas é muito mais fácil fazê-lo com o **Flash Builder**, já que o processo de compilação é automático e podem ver-se as mensagens de forma mais imediata.
+
+A forma mais simples de executar este processo é utilizando o **Flash Builder** ou o **Eclipse** com o plugin **Subclipse** instalado (O **Eclipse** e o **Flash Builder** já têm suporte nativo para **ANT**). Outras alternativas passam por ter o próprio **Subversion** (ou clientes gráficos como, por exemplo, o **TortoiseSVN**) e o **ANT** linha de comando instalados no computador
+
+# Configuração do Eclipse #
+Para que seja possível editar os ficheiros _.properties_ que contém os textos é necessário configurar o **Eclipse** para os abrir como _UTF-8_ e não como _ISO-8859-1_ como faria normalmente. Para isso é necessário editar as preferências, seleccionar a secção **General**, depois a opção **Content Types**. Na listagem de **Content Types** que aparece do lado direito da caixa de diálogo, abrir a secção **Text** e seleccionar a secção **Java Properties File**. No fundo da caixa de diálogo, na caixa de texto intitulada **Default enconding**, substituir _ISO-8859-1_ por _UTF-8_.
+
+
+# Instruções #
+  1. Fazer o checkout do projecto para uma pasta local. Este processo depende muito do clientes **Subversion** utilizado já que cada um possui metodologias e _workflows_ próprios. Devem utilizar como endereço do repositório o que é providenciado na _tab source_ do site do projecto;
+  1. Consultar os _issues_ criadas no site do projecto para verificar quais os ficheiros que já possuem "owner" (responsável);
+  1. Seleccionar um ficheiro que ainda não possua owner e criar um issue identificando-se a si próprio como owner do issue. O nome dado ao _issue_ deve seguir as normas `[`_nome do bundle_`]` - _nome do ficheiro_;
+  1. Fazer as traduções na cópia local do ficheiro traduzido;
+  1. Executar o o ficheiro _build.xml_ com o **ANT** (no **Eclipse** ou **Flash Builder**, pode-se correr este ficheiro a partir de uma opção do menu **Run**;
+  1. Verificar as traduções compilando um projecto referência em que a mensagem em questão deva aparecer;
+  1. Fazer o _commit_ das alterações através do **Subversion**. É obrigatório o preenchimento do comentário no _commit_ com as indicação dos códigos das mensagens traduzidas;
+  1. Alterar o owner do issue para ruidsilva ou joaopedromartinsfernandes para verificação técnica da tradução.

@@ -1,0 +1,1 @@
+This project is destinated to provide locale pt\_PT to Flex applications.
